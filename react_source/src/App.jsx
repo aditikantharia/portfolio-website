@@ -1,5 +1,9 @@
 import { useState, useEffect } from 'react';
 import './index.css';
+import profileImg from './assets/profile.jpg';
+import project1Img from './assets/project1.jpg';
+import project2Img from './assets/project2.jpg';
+import project3Img from './assets/project3.jpg';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -103,7 +107,7 @@ function App() {
             </div>
             <div className="hero-image">
               <div className="image-wrapper">
-                <img src="/assets/profile.jpg" alt="Kantharia Aditi" id="profile-img" />
+                <img src={profileImg} alt="Kantharia Aditi" id="profile-img" />
               </div>
             </div>
           </div>
@@ -204,7 +208,7 @@ function App() {
               {/* Project 1 */}
               <div className="project-card">
                 <div className="project-img">
-                  <img src="/assets/project1.jpg" alt="E-Commerce Platform" />
+                  <img src={project1Img} alt="E-Commerce Platform" />
                 </div>
                 <div className="project-info">
                   <h3>NextGen E-Commerce</h3>
@@ -224,7 +228,7 @@ function App() {
               {/* Project 2 */}
               <div className="project-card">
                 <div className="project-img">
-                  <img src="/assets/project2.jpg" alt="Analytics Dashboard" />
+                  <img src={project2Img} alt="Analytics Dashboard" />
                 </div>
                 <div className="project-info">
                   <h3>DataPulse Analytics</h3>
@@ -244,7 +248,7 @@ function App() {
               {/* Project 3 */}
               <div className="project-card">
                 <div className="project-img">
-                  <img src="/assets/project3.jpg" alt="Task Management App" />
+                  <img src={project3Img} alt="Task Management App" />
                 </div>
                 <div className="project-info">
                   <h3>TaskMaster Mobile</h3>
